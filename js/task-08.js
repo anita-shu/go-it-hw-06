@@ -7,6 +7,7 @@ function formSubmit(event) {
   const password = form.elements.password.value;
   if (email === "" || password === "") {
     alert("Please, fill  the gap!");
+    return;
   } else {
     const details = {
       login: email,
